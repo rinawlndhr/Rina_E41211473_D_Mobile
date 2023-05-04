@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Text"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true">
+    </TextView>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginBottom="45dp"
+        android:onClick="next"
+        android:text="click to view" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginLeft="-30dp"
+
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="-9dp"
+        android:layout_marginBottom="41dp"
+        android:onClick="savePublic"
+        android:text="save as public" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="198dp"
+        android:onClick="savePrivate"
+        android:text="Save as private" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center_vertical|center"
+        android:inputType="textImeMultiLine"/>
+
+</RelativeLayout>
